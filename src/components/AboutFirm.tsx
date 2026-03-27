@@ -1,11 +1,6 @@
-export default function AboutFirm() {
-  const firmStats = [
-    { id: 1, value: "250+", lines: ["Professional Staff", "Members Globally"] },
-    { id: 2, value: "1000+", lines: ["Clients in the HLS", "Global Network"] },
-    { id: 3, value: "35+", lines: ["Years of Experience", "Connecting Japan", "and the World"] },
-    { id: 4, value: "15+", lines: ["Countries Covered", "With Our Alliance", "Network"] }
-  ];
+import { firmStats } from '@/lib/data';
 
+export default function AboutFirm() {
   return (
     <section className="w-full py-20 px-6 md:px-12 max-w-[1400px] mx-auto flex flex-col lg:flex-row gap-12 lg:gap-16 relative">
       <div className="absolute inset-0 opacity-[0.03] pointer-events-none" 

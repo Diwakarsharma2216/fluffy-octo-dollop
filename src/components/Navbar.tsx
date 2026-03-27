@@ -1,19 +1,7 @@
 import Link from 'next/link';
+import { navLinks, regionOptions } from '@/lib/data';
 
 export default function Navbar() {
-  const navLinks = [
-    { id: 1, label: "WHO WE SERVE", href: "#" },
-    { id: 2, label: "SOLUTIONS", href: "#" },
-    { id: 3, label: "RESOURCES", href: "#" },
-    { id: 4, label: "ABOUT US", href: "#" },
-    { id: 5, label: "CONTACT US", href: "#" }
-  ];
-
-  const regionOptions = [
-    { id: 1, code: "IND" },
-    { id: 2, code: "ENGLISH" }
-  ];
-
   return (
     <nav className="w-full flex items-center justify-between px-6 md:px-12 py-5 bg-white border-b border-gray-100">
       <div className="flex items-center">

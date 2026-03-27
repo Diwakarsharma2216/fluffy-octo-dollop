@@ -1,9 +1,6 @@
-export default function Hero() {
-  const popupAvatars = [
-    { id: 1, src: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80", alt: "user 1", zIndex: 30 },
-    { id: 2, src: "https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80", alt: "user 2", zIndex: 20 }
-  ];
+import { popupAvatars } from '@/lib/data';
 
+export default function Hero() {
   return (
     <section className="relative w-full h-auto md:h-[600px] flex flex-col md:flex-row bg-[#0b3383] text-white overflow-hidden">
       <div className="w-full md:w-[45%] p-10 md:p-16 lg:pl-28 flex flex-col justify-center z-10 relative">

@@ -1,11 +1,6 @@
-export default function HotTopics() {
-  const topics = [
-    { id: 1, title: "Parliament Introduces Income Tax Bill to Reshape India's Direct Tax Landscape" },
-    { id: 2, title: "Indian Export Earnings at Risk as U.S. Tariffs Double to 50%" },
-    { id: 3, title: "India Eases Select BIS Norms While Tightening Overall Standards Enforcement" },
-    { id: 4, title: "India Modernizes Maritime Law with Carriage of Goods by Sea Bill, 2025" }
-  ];
+import { topics } from '@/lib/data';
 
+export default function HotTopics() {
   return (
     <section className="w-full bg-white border-b border-gray-200">
       <div className="flex flex-col md:flex-row">

@@ -1,59 +1,6 @@
+import { listItems, insightImages } from '@/lib/data';
+
 export default function Insights() {
-  const listItems = [
-    { 
-      id: 1,
-      title: "Pre-market Entry", 
-      desc: "Pre-market entry means trading securities before regular market hours to react to overnight news, with lower liquidity and wider spreads.", 
-      active: true 
-    },
-    { 
-      id: 2,
-      title: "Market Entry", 
-      desc: "Research demand, assess competition, choose mode, locallize offering, comply regulations, price strategically, partner locally, iterate learning.", 
-      active: false 
-    },
-    { 
-      id: 3,
-      title: "Operations", 
-      desc: "Planning, organizing, and managing processes to efficiently produce goods or services, ensuring quality, cost-effectiveness, and customer satisfaction.", 
-      active: false 
-    },
-    { 
-      id: 4,
-      title: "Growth & Expansion", 
-      desc: "Increasing business size, market reach, revenue, and resources to achieve long-term sustainability and competitive advantage.", 
-      active: false 
-    }
-  ];
-
-  const insightImages = [
-    {
-      id: 1,
-      src: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
-      alt: "Coins on table",
-      title: "Pre-Market",
-      desc: "Evaluating Supply Chain Readiness Before Committing Capital In Emerging Markets",
-      widthClass: "w-[55%]",
-      isVertical: false
-    },
-    {
-      id: 2,
-      src: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
-      alt: "Team operation",
-      title: "Operations",
-      widthClass: "w-[22.5%]",
-      isVertical: true
-    },
-    {
-      id: 3,
-      src: "https://images.unsplash.com/photo-1556761175-5973dc0f32b7?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
-      alt: "Growth chart",
-      title: "Growth & Expansion",
-      widthClass: "w-[22.5%]",
-      isVertical: true
-    }
-  ];
-
   return (
     <section className="w-full py-16 px-6 md:px-12 max-w-[1400px] mx-auto flex flex-col lg:flex-row gap-12 lg:gap-16">
       
