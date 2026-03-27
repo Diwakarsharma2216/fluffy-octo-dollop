@@ -2,79 +2,82 @@ import { popupAvatars } from '@/lib/data';
 
 export default function Hero() {
   return (
-    <section className="relative w-full h-auto md:h-[600px] flex flex-col md:flex-row bg-[#0b3383] text-white overflow-hidden">
-      <div className="w-full md:w-[45%] p-10 md:p-16 lg:pl-28 flex flex-col justify-center z-10 relative">
-        <p className="text-[11px] font-bold mb-5 tracking-widest text-[#a8c1f0] uppercase">
-          Accountants and global business advisors
-        </p>
-        
-        <h1 className="text-5xl lg:text-[4rem] font-extrabold leading-[1.1] mb-6 tracking-tight">
-          EMPOWERED <br /> WORKPLACES
-        </h1>
-        
-        <p className="text-sm md:text-base leading-relaxed mb-12 max-w-[400px] text-gray-200">
-          By fostering inclusivity, encouraging growth, promoting collaboration, valuing diversity, supporting innovation, and building trust for shared success.
-        </p>
-        
-        <div>
-          <button className="bg-[#ff6c0e] hover:bg-[#e05f0b] text-white text-[13px] font-bold py-3.5 px-8 rounded-sm flex items-center gap-4 transition-all w-max shadow-lg">
-            <span className="text-lg leading-none">&#8594;</span> 
+    <section className="relative w-full h-[898px] overflow-hidden bg-[#0c2fa5]">
+
+      <img
+        src="https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=85"
+        alt="Modern office workspace"
+        className="absolute inset-0 w-full h-full object-cover object-center"
+      />
+
+      <svg
+        className="absolute inset-0 w-full h-full z-10 pointer-events-none"
+        viewBox="0 0 100 100"
+        preserveAspectRatio="none"
+      >
+        <path
+          d="M 0,0 L 37,0 C 55,0 56,12 50,24 C 44,36 38,42 38,50 C 38,58 44,64 50,76 C 56,88 55,100 37,100 L 0,100 Z"
+          fill="#0c2fa5"
+        />
+      </svg>
+
+      <div className="absolute inset-0 z-20 flex flex-col justify-between py-[60px] pl-[72px] pr-[55%] pointer-events-none">
+
+        <div className="flex flex-col justify-center flex-1 pointer-events-auto">
+
+          <p className="text-[9px] font-bold text-[#a8c0e0] mb-6 tracking-[0.2em] uppercase">
+            Accountants and global business advisors
+          </p>
+
+          <h1 className="text-white font-extrabold leading-[1.04] tracking-tight" style={{ fontSize: 'clamp(40px, 5vw, 72px)' }}>
+            EMPOWERED<br />WORKPLACES
+          </h1>
+
+          <div className="w-[88%] h-[3.5px] bg-white mt-7 mb-8"></div>
+
+          <p className="text-[12.5px] font-normal leading-[1.75] text-[#cddcf5] max-w-[340px]">
+            by fostering inclusivity, encouraging growth, promoting
+            collaboration, valuing diversity, supporting innovation, and
+            building trust for shared success.
+          </p>
+
+          <button
+            className="mt-12 flex items-center gap-4 bg-[#ff6c0e] hover:bg-[#e55f0a] text-black text-[11px] font-extrabold tracking-widest w-fit px-6 py-3.5 transition-all active:scale-95"
+            style={{ clipPath: 'polygon(0 0, 100% 0, 90% 100%, 0% 100%)' }}
+          >
+            <span className="text-[18px] leading-none">&#8594;</span>
             <span>LETS CONNECT</span>
           </button>
         </div>
 
-        <div className="mt-20 text-[10px] sm:text-xs text-blue-200 max-w-[400px] font-medium tracking-wide">
-          ACCOUNTING, TAXATION, & BUSINESS ADVISORY BETWEEN INDIA, JAPAN, AND THE WORLD
+        <p className="text-[9.5px] font-extrabold text-[#c8d9ef] tracking-[0.18em] uppercase pointer-events-auto">
+          Accounting, taxation, &amp; business advisory between India, Japan, and the world
+        </p>
+      </div>
+
+      <div className="absolute bottom-[62px] right-[5%] z-20 flex items-center gap-5 pointer-events-auto">
+        <div className="flex -space-x-[12px]">
+          {popupAvatars.map((avatar) => (
+            <div
+              key={avatar.id}
+              style={{ zIndex: avatar.zIndex }}
+              className="w-[48px] h-[48px] rounded-full border-[2.5px] border-white overflow-hidden shadow-lg relative"
+            >
+              <img src={avatar.src} alt={avatar.alt} className="w-full h-full object-cover" />
+            </div>
+          ))}
+          <div className="w-[48px] h-[48px] rounded-full bg-[#ff6c0e] border-[2.5px] border-white flex items-center justify-center text-[9px] font-extrabold text-white z-[10] relative shadow-lg">
+            MORE
+          </div>
+        </div>
+        <div>
+          <p className="text-white text-[28px] font-extrabold leading-none mb-1">250 +</p>
+          <p className="text-[#d1ddf5] text-[10px] font-medium leading-[1.4]">
+            Enjoy Working<br />with us
+          </p>
         </div>
       </div>
 
-      <div className="absolute top-0 right-0 w-[60%] h-full hidden md:block z-0" 
-           style={{ clipPath: 'polygon(15% 0, 100% 0, 100% 100%, 0% 100%)' }}>
-        
-        <div className="w-full h-full bg-gray-200 relative">
-          <img 
-            src="https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80" 
-            alt="Modern office space" 
-            className="w-full h-full object-cover"
-          />
-          
-          <div className="absolute top-24 left-[20%] bg-white/95 rounded-full p-2 flex items-center shadow-xl backdrop-blur-sm shadow-[#00000020] scale-90">
-            <div className="flex -space-x-2">
-               <div className="w-12 h-12 rounded-full border-[3px] border-white overflow-hidden shadow-sm">
-                  <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="team member" className="w-full h-full object-cover"/>
-               </div>
-               <div className="w-12 h-12 rounded-full bg-[#0582ff] border-[3px] border-white flex items-center justify-center font-bold text-white text-xl shadow-sm z-10">
-                 D
-               </div>
-            </div>
-          </div>
-          
-          <div className="absolute bottom-12 right-12 bg-[#124294]/90 py-2.5 px-6 rounded-full flex items-center gap-5 text-white shadow-xl backdrop-blur-md border border-blue-400/20">
-            <div className="flex -space-x-3">
-              {popupAvatars.map((avatar) => (
-                <div key={avatar.id} style={{ zIndex: avatar.zIndex }} className="w-10 h-10 rounded-full border-2 border-[#124294] overflow-hidden relative">
-                    <img src={avatar.src} alt={avatar.alt} className="w-full h-full object-cover"/>
-                </div>
-              ))}
-              <div className="w-10 h-10 rounded-full bg-[#ff6c0e] border-2 border-[#124294] flex items-center justify-center text-[9px] font-bold z-10 relative">
-                 MORE
-              </div>
-            </div>
-            <div className="pr-2">
-              <div className="text-2xl font-bold leading-none mb-0.5">250 +</div>
-              <div className="text-[10px] leading-tight text-blue-200">Enjoy Working<br/>with us</div>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-      <div className="w-full h-64 md:hidden relative border-t-4 border-[#ff6c0e]">
-          <img 
-            src="https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
-            alt="Office" 
-            className="w-full h-full object-cover"
-          />
-      </div>
     </section>
   );
 }
